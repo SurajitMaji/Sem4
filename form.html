@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+    margin:0px;
+    padding: 0px;
+    background-color:rgba(101, 101, 201, 0.775);
+}
+.form-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 39px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(245, 243, 243);
+}
+.form-area-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+.full-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+    padding: 0px;
+}
+.personal-info{
+    background-color: white;
+    color: rgba(3, 3, 212, 0.69);
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px ;
+}
+.contact-details{
+    background-color: rgba(3, 3, 212, 0.69);
+    color: white;
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+}
+.personal-info,.contact-details /*for two heading*/
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+div.photo{
+    display: flex;
+    justify-content: center;
+}
+img.photo{
+    border: 5px solid blue;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 45rem;
+}
+/* .profile-photo-area,
+.name-details{
+    display: flex;
+    flex-direction: column;
+    padding:8px;
+}
+.name-area{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+} */
+
+.profile-photo-label,
+.name-label,/*personal information label design*/
+.father-name-label,
+.education-label,
+.subject-label{
+    display: flex;
+    justify-content: left;
+    margin: 5px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top:3px;
+    padding: 2px 10px 2px 10px;
+    font-size: 20px;
+    color:rgb(249, 249, 249);
+    background-color: blue;
+    box-shadow: 3px 1px 2px 0.1px black;
+}
+.phone-number-label,/*contact details label design*/
+.email-label,
+.village-city-label,
+.post-label,
+.police-station-label,
+.dist-label,
+.state-label,
+.country-label{
+    display: flex;
+    justify-content: left;
+    margin: 5px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top:3px;
+    padding: 2px 10px 2px 10px;
+    font-size: 20px;
+    background-color:rgb(249, 249, 249);
+    color: blue;
+    box-shadow: 3px 1px 2px 0.1px black;
+}
+input[type="text"],select,input[type="file"]{
+    width:90%;
+    margin: 10px;
+    padding: 25px 10px 10px 10px;
+    font-size: 24px;
+    font-family:  Helvetica, sans-serif;
+    border-radius: 0px; 
+    border:none; 
+    background-color: rgba(225, 228, 230, 0.916);
+    border-bottom: 2px solid black;
+    transition: .8s;
+}
+input[type="text"]:focus,select:focus{
+    border: 1px solid black;
+    outline: none;
+    box-shadow: 2px 1px 2px 0.2px;
+}
+select{
+    width: 93%;
+}
+#profile_photo_error,
+#name_error,
+#father_name_error,
+#education_error,
+#subject_error,
+#phone_number_error,
+#email_error,
+#village_city_error,
+#post_error,
+#police_station_error,
+#dist_error,
+#state_error,
+#country_error
+{
+    display: flex;
+    justify-content: center;
+    height: 18px;
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+    margin-left: 20px;
+}
+.statement{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.statement a{
+    color: rgb(251, 76, 187);
+    margin-left: 2px;
+    margin-right: 2px;
+}
+div.submit{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+input.submit{
+    padding: 10px 80px 10px 80px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(253, 254, 255);
+    background-color: rgb(13, 182, 7);
+    border-radius: 20px;
+    border:none;
+    transition:.5s;
+}
+input.submit:hover{
+    border-radius: 30px;
+    background-color: rgb(0, 255, 8);
+    cursor: pointer;
+}
+input.submit:active{
+    border-radius: 40px;
+    background-color: rgb(0, 38, 255);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px){
+
+    .full-area{
+        display: flex;
+        flex-direction: column;
+        margin: 2px;
+    }
+    .form-heading{
+        margin-left:2px ;
+        margin-right:2px;
+        font-size: 30px;
+        font-family: Times, serif;
+        color: rgb(255, 255, 255);
+        background-color: rgb(61, 132, 237);
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border:1px solid white;
+    }
+    
+    .personal-info{
+        border-radius: 0px;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+    }
+    .contact-details{
+        border-radius: 0px;
+        border-bottom-left-radius: 10px ;
+        border-bottom-right-radius: 10px ;
+    }
+}
+    </style>
+    <title>Form</title>
+</head>
+<body>
+    <div class="body">
+
+        <form action="#" class="teacher-form" name="regform" onsubmit="return formvalidation()" method="post">
+        <div class="form-heading">
+            Tutor Application Form
+        </div>
+        <div class="full-area">
+            <div class="personal-info">
+                <div class="form-area-heading">Personal Information</div>
+               
+                <div class="form-area">
+                    <div class="profile-photo-details">
+                        <div class="profile-photo-area">
+                            <div class="profile-photo-label">Profile Photo </div>
+                            <div class="profile-photo-input-box">
+                                <input type="file" class="profile-photo" name="profile_photo" id="profile_photo" onchange="preview(this,'profile_photo_preview')">
+                            </div>
+                            <div class="photo">
+                                <img src="" alt="" class="photo" id="profile_photo_preview">
+                            </div>
+                        </div>
+                        <div id="profile_photo_error"> </div>
+                    </div>
+                    <div class="name-details">
+                        <div class="name-area">
+                            <div class="name-label">Name</div>
+                            <div class="name-input-box">
+                                <input type="text" class="name" name="name" id="name">
+                            </div>
+                        </div>
+                        <div id="name_error"> </div>
+                    </div>
+                    <div class="father-name-details">
+                        <div class="father-name-area">
+                            <div class="father-name-label">Father Name</div>
+                            <div class="father-name-input-box">
+                                <input type="text" class="father-name" name="father_name" id="father_name">
+                            </div>
+                        </div>
+                        <div id="father_name_error"> </div>
+                    </div>
+                    <div class="education-details">
+                        <div class="education-area">
+                            <div class="education-label">Education</div>
+                            <div class="education-input-box">
+                                <select type="text" class="education" name="education" id="education">
+                                    <option value="-1"></option>
+                                    <option value="beloweight">Below 8</option>
+                                    <option value="eighth">8th Pass</option>
+                                    <option value="secondary">Secondary</option>
+                                    <option value="hs">Higher Secondary</option>
+                                    <option value="ug">Under Graduate</option>
+                                    <option value="pg">Post Graduate</option>
+                                    <option value="phd">PhD</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="education_error"> </div>
+                    </div>
+                    <div class="subject-details">
+                        <div class="subject-area">
+                            <div class="subject-label">Spacialist Subject</div>
+                            <div class="subject-input-box">
+                                <input type="text" class="subject" name="subject" id="subject">
+                            </div>
+                        </div>
+                        <div id="subject_error"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-details">
+                <div class="form-area-heading">Contact Details</div>
+               
+                <div class="form-area">
+                    <div class="phone-number-details">
+                        <div class="phone-number-area">
+                            <div class="phone-number-label">Phone Number</div>
+                            <div class="phone-number-input-box">
+                                <input type="text" class="phone-number" name="phone_number" id="phone_number">
+                            </div>
+                        </div>
+                        <div id="phone_number_error"> </div>
+                    </div>
+                    <div class="email-details">
+                        <div class="email-area">
+                            <div class="email-label">Email</div>
+                            <div class="email-input-box">
+                                <input type="text" class="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div id="email_error"></div>
+                    </div>
+                    <div class="village-city-details">
+                        <div class="village-city-area">
+                            <div class="village-city-label">Village/City </div>
+                            <div class="village-city-input-box">
+                                <input type="text" class="village-city" name="village_city" id="village_city">
+                            </div>
+                        </div>
+                        <div id="village_city_error"> </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="post-area">
+                            <div class="post-label">Post Office</div>
+                            <div class="post-input-box">
+                                <input type="text" class="post" name="post" id="post">
+                            </div>
+                        </div>
+                        <div id="post_error"> </div>
+                    </div>
+                    <div class="police-station-details">
+                        <div class="police-station-area">
+                            <div class="police-station-label">Police Station </div>
+                            <div class="police-station-input-box">
+                                <input type="text" class="police-station" name="police_station" id="police_station">
+                            </div>
+                        </div>
+                        <div id="police_station_error"> </div>
+                    </div>
+                    
+                    <div class="dist-details">
+                        <div class="dist-area">
+                            <div class="dist-label">District</div>
+                            <div class="dist-input-box">
+                                <input type="text" class="dist" name="dist" id="dist">
+                            </div>
+                        </div>
+                        <div id="dist_error"> </div>
+                    </div>
+                    
+                    <div class="state-details">
+                        <div class="state-area">
+                            <div class="state-label">State</div>
+                            <div class="state-input-box">
+                                <input type="text" class="state" name="state" id="state">
+                            </div>
+                        </div>
+                        <div id="state_error"> </div>
+                    </div>
+
+                    <div class="country-details">
+                        <div class="country-area">
+                            <div class="country-label">Country</div>
+                            <div class="country-input-box">
+                                <input type="text" class="country" name="country" id="country">
+                            </div>
+                        </div>
+                        <div id="country_error"> </div>
+                    </div>
+                    <div class="statement">
+                        Are you already a tutor? <a href="#" class="sign-in">Sign In</a> to our institute.
+                    </div>
+                    <div class="submit">
+                        <input type="submit" class="submit" name="submit" /*value="Register"*/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        </form>
+    </div>
+    <script>
+ 
+function preview(input, profile_photo_preview)  // this function for profilr photo view
+ {
+    let file = input.files[0];
+    let reader = new FileReader(); 
+    reader.readAsDataURL(file);
+    reader.onload = function () {
+        let img = document.getElementById(profile_photo_preview);
+        // can also use "this.result"
+        img.src = reader.result;
+        let view=document.getElementById(photo);
+    }
+}
+
+function formvalidation()// This function to check validation of the form's value
+{
+    //profile photo checking
+
+    // Allowing file type
+    var allowedExtensions=/(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+    var photo=document.forms.regform.profile_photo.value;
+     var filePath = photo;
+        if (photo=="" ||  !allowedExtensions.exec(photo)){
+            document.getElementById("profile_photo").style.border="1px solid red";
+            if(photo==""){
+                document.getElementById("profile_photo_error").innerHTML="Please Enter your profile_photo";
+            }
+            else{                    
+                document.getElementById("profile_photo_error").innerHTML="Please choose correct type profile_photo";
+            }
+            return false;
+        }
+        else{
+            document.getElementById("profile_photo_error").innerHTML="";
+            document.getElementById("profile_photo").style.border="none";
+        }
+
+    var name=document.forms.regform.name.value;
+    //specified name
+    var reg_name=/\d+$/g;
+    if(name=="" || reg_name.test(name)){
+        document.getElementById("name_error").innerHTML="Please Enter your name";
+        document.getElementById("name").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("name_error").innerHTML="";
+        document.getElementById("name").style.border="none";
+    }
+    
+    var father_name=document.forms.regform.father_name.value;
+    // checking father name
+    if(father_name=="" || reg_name.test(father_name)){
+        document.getElementById("father_name_error").innerHTML="Please Enter your father name";
+        document.getElementById("father_name").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("father_name_error").innerHTML="";
+        document.getElementById("father_name").style.border="";
+    }
+    //checking for education
+    var education=document.forms.regform.education.value;
+    // education checking
+    if(education==-1){
+         document.getElementById("education_error").innerHTML="Please select your education";
+         document.getElementById("education").style.border="1px solid red";
+         return false;
+    }
+    else{
+        document.getElementById("education_error").innerHTML="";
+        document.getElementById("education").style.border="";
+    }
+    //checking for subject
+    var subject=document.forms.regform.subject.value;
+    if(subject==""){   
+        document.getElementById("subject_error").innerHTML="Please Enter your subject";
+        document.getElementById("subject").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("subject_error").innerHTML="";
+        document.getElementById("subject").style.border="";
+    }
+
+    //checking for phone number
+    var reg_phone_number=/^\d{10}$/;
+    var phone_number=document.forms.regform.phone_number.value;
+    if(phone_number=="" || phone_number.length!=10 ){   
+        document.getElementById("phone_number_error").innerHTML="Please Enter your phone_number";
+        document.getElementById("phone_number").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("phone_number_error").innerHTML="";
+        document.getElementById("phone_number").style.border="";
+    }
+    //checking for email.
+    var email=document.forms.regform.email.value;
+    //specified email
+    var reg_email=/^w([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+    if(email=="" || reg_email.test(email)){
+        document.getElementById("email_error").innerHTML="Please Enter your email";
+        document.getElementById("email").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("email_error").innerHTML="";
+        document.getElementById("email").style.border="none";
+    }
+
+    
+    //checking for subject
+    var village_city=document.forms.regform.village_city.value;
+    if(village_city==""){   
+        document.getElementById("village_city_error").innerHTML="Please Enter your  village_city";
+        document.getElementById("village_city").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("village_city_error").innerHTML="";
+        document.getElementById("village_city").style.border="";
+    }
+    
+
+//checking for post
+var post=document.forms.regform.post.value;
+    if(post==""){   
+        document.getElementById("post_error").innerHTML="Please Enter your post office";
+        document.getElementById("post").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("post_error").innerHTML="";
+        document.getElementById("post").style.border="";
+    }
+//checking for police_station
+    var police_station=document.forms.regform.police_station.value;
+    if(police_station==""){   
+        document.getElementById("police_station_error").innerHTML="Please Enter your  police station";
+        document.getElementById("police_station").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("police_station_error").innerHTML="";
+        document.getElementById("police_station").style.border="";
+    }
+//checking for dist
+    var dist=document.forms.regform.dist.value;
+    if(dist==""){   
+        document.getElementById("dist_error").innerHTML="Please Enter your district";
+        document.getElementById("dist").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("dist_error").innerHTML="";
+        document.getElementById("dist").style.border="";
+    }
+//checking for state
+    var state=document.forms.regform.state.value;
+    if(state==""){   
+        document.getElementById("state_error").innerHTML="Please Enter your state";
+        document.getElementById("state").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("state_error").innerHTML="";
+        document.getElementById("state").style.border="";
+    }
+
+//checking for country
+var country=document.forms.regform.country.value;
+    if(country==""){   
+        document.getElementById("country_error").innerHTML="Please Enter your country";
+        document.getElementById("country").style.border="1px solid red";
+        return false;
+    }
+    else{
+        document.getElementById("country_error").innerHTML="";
+        document.getElementById("country").style.border="";
+    }
+}
+    </script>
+</body>
+</html>
