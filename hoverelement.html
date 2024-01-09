@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="stylesheet" href="nav.css">
+    <script src="myntra.js"></script>
+</head>
+<body onLoad="next();">
+    <nav>
+    <div class="nav-area">
+        <div class="first-part">
+            <div class="logo">
+                <img src="myntra.png" alt="" class="myntra-logo">
+            </div>
+            <div class="nav-content">
+                <a href="#">
+                    <div class="men" id="men_nav" onmouseover="show_men()" onmouseout="hide_men()">
+                        MEN
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="women" id="women_nav" onmouseover="show_women()" onmouseout="hide_women()">
+                        WOMEN
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="kids" id="kids_nav" onmouseover="show_kids()" onmouseout="hide_kids()">
+                         KIDS
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="home-living" id="home_living_nav" onmouseover="show_home_living()" onmouseout="hide_home_living()">
+                    HOME&nbsp;&&nbsp;LIVING
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="beauty" id="beauty_nav" onmouseover="show_beauty()" onmouseout="hide_beauty()">
+                     BEAUTY
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="studio" id="studio_nav" onmouseover="show_studio()" onmouseout="hide_studio()">
+                        STUDIO
+                        <span class="new">NEW</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="second-part">
+            <div class="search-bar">
+                <div class="search-image-area">
+                    <img src="search.jpg" alt="" class="search-image">
+                </div>
+                <div class="search-input-area">
+                    <input type="text" class="search-input" placeholder="search for products,brands and more">
+                </div>
+            </div>
+            <div class="details-area" >  
+                <div class="profile-area" id="profile_nav" onmouseover="show_profile()" onmouseout="hide_profile()">
+                    <div class="profile-photo">
+                        <img src="profile.png" alt="" class="profile-photo">
+                    </div>
+                    <div class="proflie" >
+                        <a href="#">Profile</a>
+                    </div>
+                </div>
+                
+                <div class="wishlist-area">
+                    <a href="#">
+                    <div class="wishlist-photo">
+                        <img src="wishlist.jpg" alt="" class="wishlist-photo">
+                    </div>
+                    <div class="proflie">
+                        Wishlist
+                    </div>
+                    </a>
+                </div>
+                
+                <div class="bag-area">
+                    <div class="bag-photo">
+                        <img src="bag.png" alt="" class="bag-photo">
+                    </div>
+                    <div class="proflie">
+                        <a href="#">Bag</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-hover-content" id="nav_hover_content">
+        <div class="nav-men-content" id="nav_men_content" onmouseover="show_men()" onmouseout="hide_men()">
+            <div class="col1">
+                <div class="category-heading">
+                <a href="#">Topwears</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            T-Shirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Casual Shirts 
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Formal Shirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sweatshirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sweaters
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Jackets
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Blazers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Suits
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Rain Jackects
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                    
+                </div>
+                <div class="category-heading">
+                    <a href="#">Indian & Festive Wear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Kurtas & Kurta Sets
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sherwanis
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Nehru Jackets
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Dhotis
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="category-heading">
+                    <a href="#">Bottomwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Jeans
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Casual Troursers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Formal Trousers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Shorts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Track Pants & Joggers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Innerwear & Sleepwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Briefs & Trunks
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Boxers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Vests
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sleeperwear & Loungwear
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Thermals
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Plus Size</a>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="category-heading">
+                    <a href="#">Footwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Casual Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sports Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Formal Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sneakers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sandals & Floaters
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Flip Flops
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Socks
+                        </a>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Personal Care & Grooming</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Sunglasses & Frames</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Watchs</a>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="category-heading">
+                    <a href="#">Sports & Active Wear</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sports Shoes
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sports Sandals  
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Active T-Shirts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Track Pants & Shorts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Tracksuits
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Jackets & Sweatshirts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sports Accessories
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Swimwear
+                            </a>
+                        </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Gadgets</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Smart Wearabels
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Fitness Gadgets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Headphones
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Speakers
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col5">
+                <div class="category-heading">
+                    <a href="#">Fashion Accessories</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Wallets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Belts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Perfumes & Body Mists
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Trimmers
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Deodorants
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Ties,Cufflinks & Pocket Squares
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Accessory
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Caps & Hats
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Mufflers,Scarves & Gloves
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Phone Cases
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Rings & Wristwear
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                            Helmets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <hr>
+                        </div>
+                        
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Bags & Backpackes</a>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Luggages & Trolleys</a>
+                    </div>                    
+            </div>
+        </div>
+        <div class="nav-women-content" id="nav_women_content" onmouseover="show_women()" onmouseout="hide_women()">
+            <div class="col1">
+                <div class="category-heading">
+                <a href="#">Indian & Fusion Wear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Kurtas & Suits
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Kurtis,Tunics & Tops 
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sarees
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Ethenic Wear
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Leggings,Salwars & Churidars
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Skirts & Palazzos
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Dress Materials
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Lehenga Cholis
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Dupattas & Shawls
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Jackects
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Belts, Scarves & More</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Watches & Wearable</a>
+                </div>
+                
+            </div>
+            <div class="col2">
+                <div class="category-heading">
+                    <a href="#">Weastern Wear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Dresses
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Tops
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            T-shirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Jeans
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Trousers & Capris
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Shirts & Skirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Co-ords
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Playsuits
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Jumpsuits
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Shrugs
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sweaters & Sweatshirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Jackets & Coats
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Blazers & Waistcoats
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Plus Size</a>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="category-heading">
+                    <a href="#">Maternity</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Sunglass & Frames</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Footwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Flats
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Casual Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Heels
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Boots
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sports Shoes & Floats
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                    
+                </div>
+                <div class="category-heading">
+                    <a href="#">Sports & Active Wear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Clothing
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Footwear  
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sports Accessories
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sports Equipment
+                        </a>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="col4">
+                <div class="category-heading">
+                    <a href="#">Lingerie & Sleepwear</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Bra
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Briefs 
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Shapewear
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sleeepwear & Loungewear
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Swimwear
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Camisole & Thermals
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Beauty & Personal Care</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Makeup
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Skincare
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Permium Beauty
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Lipstick
+                            </a>
+                        </div>
+                        
+                        <div class="category-products">
+                            <a href="#" class="product">
+                              Fragrances
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col5">
+                <div class="category-heading">
+                    <a href="#">Gadgets</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Smart Wearables
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Fitness Gadgets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Headphones
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Speakers
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <hr>
+                        </div>
+                        
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Jewellery</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Fashion Jewellery
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Fine Jewellary
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Earring
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Backpacks</a>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Handbags, Bags & Wallets</a>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Luggages & Trolleys</a>
+                    </div>                    
+            </div>
+        </div>
+        <div class="nav-kids-content" id="nav_kids_content" onmouseover="show_kids()" onmouseout="hide_kids()">
+            <div class="col1">
+                <div class="category-heading">
+                <a href="#">Topwears</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            T-Shirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Casual Shirts 
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Formal Shirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sweatshirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sweaters
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Jackets
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Blazers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Suits
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Rain Jackects
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                    
+                </div>
+                <div class="category-heading">
+                    <a href="#">Indian & Festive Wear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Kurtas & Kurta Sets
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sherwanis
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Nehru Jackets
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Dhotis
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="category-heading">
+                    <a href="#">Bottomwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Jeans
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Casual Troursers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Formal Trousers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Shorts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Track Pants & Joggers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Innerwear & Sleepwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Briefs & Trunks
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Boxers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Vests
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sleeperwear & Loungwear
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Thermals
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Plus Size</a>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="category-heading">
+                    <a href="#">Footwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Casual Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sports Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Formal Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sneakers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sandals & Floaters
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Flip Flops
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Socks
+                        </a>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Personal Care & Grooming</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Sunglasses & Frames</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Watchs</a>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="category-heading">
+                    <a href="#">Sports & Active Wear</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sports Shoes
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sports Sandals  
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Active T-Shirts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Track Pants & Shorts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Tracksuits
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Jackets & Sweatshirts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sports Accessories
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Swimwear
+                            </a>
+                        </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Gadgets</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Smart Wearabels
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Fitness Gadgets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Headphones
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Speakers
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col5">
+                <div class="category-heading">
+                    <a href="#">Fashion Accessories</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Wallets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Belts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Perfumes & Body Mists
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Trimmers
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Deodorants
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Ties,Cufflinks & Pocket Squares
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Accessory
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Caps & Hats
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Mufflers,Scarves & Gloves
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Phone Cases
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Rings & Wristwear
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                            Helmets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <hr>
+                        </div>
+                        
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Bags & Backpackes</a>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Luggages & Trolleys</a>
+                    </div>                    
+            </div>
+        </div>
+        <div class="nav-home-living-content" id="nav_home_living_content" onmouseover="show_home_living()" onmouseout="hide_home_living()">
+            <div class="col1">
+                <div class="category-heading">
+                <a href="#">Indian & Fusion Wear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Kurtas & Suits
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Kurtis,Tunics & Tops 
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sarees
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Ethenic Wear
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Leggings,Salwars & Churidars
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Skirts & Palazzos
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Dress Materials
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Lehenga Cholis
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Dupattas & Shawls
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Jackects
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Belts, Scarves & More</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Watches & Wearable</a>
+                </div>
+                
+            </div>
+            <div class="col2">
+                <div class="category-heading">
+                    <a href="#">Weastern Wear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Dresses
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Tops
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            T-shirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Jeans
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Trousers & Capris
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Shirts & Skirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Co-ords
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Playsuits
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Jumpsuits
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Shrugs
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sweaters & Sweatshirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Jackets & Coats
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Blazers & Waistcoats
+                        </a>
+                    </div>
+                    
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Plus Size</a>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="category-heading">
+                    <a href="#">Maternity</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Sunglass & Frames</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Footwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Flats
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Casual Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Heels
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Boots
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sports Shoes & Floats
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                    
+                </div>
+                <div class="category-heading">
+                    <a href="#">Sports & Active Wear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Clothing
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Footwear  
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sports Accessories
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sports Equipment
+                        </a>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="col4">
+                <div class="category-heading">
+                    <a href="#">Lingerie & Sleepwear</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Bra
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Briefs 
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Shapewear
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sleeepwear & Loungewear
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Swimwear
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Camisole & Thermals
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Beauty & Personal Care</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Makeup
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Skincare
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Permium Beauty
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Lipstick
+                            </a>
+                        </div>
+                        
+                        <div class="category-products">
+                            <a href="#" class="product">
+                              Fragrances
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col5">
+                <div class="category-heading">
+                    <a href="#">Gadgets</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Smart Wearables
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Fitness Gadgets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Headphones
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Speakers
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <hr>
+                        </div>
+                        
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Jewellery</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Fashion Jewellery
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Fine Jewellary
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Earring
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Backpacks</a>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Handbags, Bags & Wallets</a>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Luggages & Trolleys</a>
+                    </div>                    
+            </div>
+        </div>
+        <div class="nav-beauty-content" id="nav_beauty_content" onmouseover="show_beauty()" onmouseout="hide_beauty()">
+            <div class="col1">
+                <div class="category-heading">
+                <a href="#">Topwears</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            T-Shirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Casual Shirts 
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Formal Shirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sweatshirts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sweaters
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Jackets
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Blazers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Suits
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Rain Jackects
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="category-heading">
+                    <a href="#">Indian & Festive Wear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Kurtas & Kurta Sets
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sherwanis
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Nehru Jackets
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Dhotis
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="category-heading">
+                    <a href="#">Bottomwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Jeans
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Casual Troursers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Formal Trousers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Shorts
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Track Pants & Joggers
+                        </a>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Innerwear & Sleepwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Briefs & Trunks
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Boxers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Vests
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sleeperwear & Loungwear
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Thermals
+                        </a>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Plus Size</a>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="category-heading">
+                    <a href="#">Footwear</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Casual Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Sports Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Formal Shoes
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sneakers
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Sandals & Floaters
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Flip Flops
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Socks
+                        </a>
+                    </div>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Personal Care & Grooming</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Sunglasses & Frames</a>
+                </div>
+                <div class="category-heading">
+                    <a href="#">Watchs</a>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="category-heading">
+                    <a href="#">Sports & Active Wear</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sports Shoes
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sports Sandals  
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Active T-Shirts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Track Pants & Shorts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Tracksuits
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Jackets & Sweatshirts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Sports Accessories
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Swimwear
+                            </a>
+                        </div>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Gadgets</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Smart Wearabels
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Fitness Gadgets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Headphones
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                               Speakers
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col5">
+                <div class="category-heading">
+                    <a href="#">Fashion Accessories</a>
+                    </div>
+                    <div class="category-details">
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Wallets
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Belts
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Perfumes & Body Mists
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Trimmers
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Deodorants
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Ties,Cufflinks & Pocket Squares
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Accessory
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Caps & Hats
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Mufflers,Scarves & Gloves
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Phone Cases
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                                Rings & Wristwear
+                            </a>
+                        </div>
+                        <div class="category-products">
+                            <a href="#" class="product">
+                            Helmets
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Bags & Backpackes</a>
+                    </div>
+                    <div class="category-heading">
+                        <a href="#">Luggages & Trolleys</a>
+                    </div>                    
+            </div>
+        </div>
+        
+        <div class="nav-studio-content" id="nav_studio_content" onmouseover="show_studio()" onmouseout="hide_studio()">
+    
+        </div>
+        <div class="nav-profile-content" id="nav_profile_content" onmouseover="show_profile()" onmouseout="hide_profile()">
+            <div class="col1">
+                <div class="category-heading">
+                <a href="#">Welcome</a>
+                </div>
+                <div class="category-details">
+                    <div class="category-product">
+                            To access account and manage orders
+                    </div>
+                    <div class="login_button">
+                        <a href="#" class="product">
+                            LOGIN/SIGNUP
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Orders
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Wishlist
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                           Git Cards
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Myntra Insider
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <hr>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Myntra Credit
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Coupons
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="category-details">
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Saved Cards
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Saved VPA
+                        </a>
+                    </div>
+                    <div class="category-products">
+                        <a href="#" class="product">
+                            Saved Address
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     
+    </nav>  
+      <main class="main-content">
+        <div class="front-banner">
+           <div class="banner-image">
+                <img src="banner1.jpg" alt="" id ="banner_image" class="banner">
+           </div>
+        </div>
+        <div class="medel-worth-brands-to-bag-area">
+            <div class="medal-worthy-brands-to-bag-heading">
+                MEDAL WORTHY BRANDS TO BAG
+            </div>
+            <div class="products-area">
+                <a href="#" class="product-link">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="men1.jpg" alt="" class="">
+                        </div>
+                        <div class="product-band-image">
+                            <img src="brandlogo.webp" alt="" class="brand-logo">
+                        </div>
+                        <div class="product-type">
+                            Work Ready Style
+                        </div>
+                        <div class="discount">
+                            Min 20% OFF
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-link">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="men2.jpg" alt="" class="">
+                        </div>
+                        <div class="product-band-image">
+                            <img src="brandlogo.webp" alt="" class="brand-logo">
+                        </div>
+                        <div class="product-type">
+                            Work Ready Style
+                        </div>
+                        <div class="discount">
+                            Min 20% OFF
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-link">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="men3.jpg" alt="" class="">
+                        </div>
+                        <div class="product-band-image">
+                            <img src="brandlogo.webp" alt="" class="brand-logo">
+                        </div>
+                        <div class="product-type">
+                            Work Ready Style
+                        </div>
+                        <div class="discount">
+                            Min 20% OFF
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-link">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="men4.jpg" alt="" class="">
+                        </div>
+                        <div class="product-band-image">
+                            <img src="brandlogo.webp" alt="" class="brand-logo">
+                        </div>
+                        <div class="product-type">
+                            Work Ready Style
+                        </div>
+                        <div class="discount">
+                            Min 20% OFF
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-link">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="men5.jpg" alt="" class="">
+                        </div>
+                        <div class="product-band-image">
+                            <img src="brandlogo.webp" alt="" class="brand-logo">
+                        </div>
+                        <div class="product-type">
+                            Work Ready Style
+                        </div>
+                        <div class="discount">
+                            Min 20% OFF
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-link">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="men6.jpg" alt="" class="">
+                        </div>
+                        <div class="product-band-image">
+                            <img src="brandlogo.webp" alt="" class="brand-logo">
+                        </div>
+                        <div class="product-type">
+                            Work Ready Style
+                        </div>
+                        <div class="discount">
+                            Min 20% OFF
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+      </main>
+</body>
+</html>
