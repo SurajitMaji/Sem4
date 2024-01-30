@@ -122,13 +122,39 @@ function banner_change(){
 var arr=["banner1.jpg","banner2.jpg","banner3.jpg","banner4.jpg","banner5.jpg"];
 var index=0;
 setInterval(function next() {
-    console.log("\n Changed");
 index++;
  if(index>=5)
  {
  index=0;
  }
- console.log(arr[index]);
+//  console.log(arr[index]);
  document.getElementById("banner_image").src=arr[index];
  
 }, 4000);
+
+// notification
+function show_hide_notification(){
+    console.log("Notification function working");
+    let notification_details=document.getElementById('hidden_notification_area');
+    let area=document.getElementById('notification_area');
+    let logo=document.getElementById('notification_logo');
+    let triangle=document.getElementById('triangle');
+     if(notification_details.style.visibility!="hidden"){
+        triangle.style.border="20px solid transparent";
+        triangle.style.borderBottom="20px solid white";
+        notification_details.style.visibility="hidden";
+        area.style.margin=" 220px 0px 0px 1190px";
+        // logo.style.justifyContent="bas"
+        area.style.alignItems="center";
+        logo.style.marginRight="85px";
+     }
+     else{
+        triangle.style.border="20px solid transparent";
+        triangle.style.borderTop="20px solid white";
+        notification_details.style.visibility="visible";
+        area.style.margin=" 220px 0px 0px 724px";
+        area.style.alignItems="end";
+        logo.style.marginRight="-6px";
+     }
+
+}
